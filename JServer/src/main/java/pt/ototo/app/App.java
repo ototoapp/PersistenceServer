@@ -8,10 +8,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import pt.ototo.dao.SugggestedRouteDao;
-import pt.ototo.domain.SelectRoute;
+import pt.ototo.dao.SuggestedRouteDao;
 import pt.ototo.domain.SuggestedRoute;
-import pt.ototo.hibernate.SuggestedRouteDaoImpl;
 
 public class App {
 	
@@ -29,7 +27,7 @@ public class App {
 		System.out.println(ctx.toString());
 		ctx.refresh();
 		
-		SugggestedRouteDao suggestedRouteDao = ctx.getBean("suggestedRouteDao", SugggestedRouteDao.class);		
+		SuggestedRouteDao suggestedRouteDao = ctx.getBean("suggestedRouteDao", SuggestedRouteDao.class);		
 		
 		List<SuggestedRoute> suggestedRoutes;
 		suggestedRoutes=suggestedRouteDao.findByRRID(RRID);

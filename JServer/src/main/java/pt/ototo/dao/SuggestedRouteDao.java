@@ -3,7 +3,7 @@ package pt.ototo.dao;
 import pt.ototo.domain.SuggestedRoute;
 import java.util.List;
 
-public interface SugggestedRouteDao {
+public interface SuggestedRouteDao {
 	
 	// Find with details by RRID
 	public List<SuggestedRoute> findByRRID(String  RRID);

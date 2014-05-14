@@ -10,13 +10,13 @@ import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import pt.ototo.dao.SugggestedRouteDao;
+import pt.ototo.dao.SuggestedRouteDao;
 import pt.ototo.domain.SuggestedRoute;
 
 
 @Repository("suggestedRouteDao")
 @Transactional
-public class SuggestedRouteDaoImpl implements SugggestedRouteDao {
+public class SuggestedRouteDaoImpl implements SuggestedRouteDao {
 
 	private Log log = LogFactory.getLog(SuggestedRouteDaoImpl.class);
 	
